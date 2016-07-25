@@ -1,5 +1,5 @@
 {
-  "name": "github-widget",
+  "name": "github-card",
   "version": "1.0.0",
   "description": "A widget showing your github details that you can easily embed in your portfolio website.",
   "main": "widget.js",

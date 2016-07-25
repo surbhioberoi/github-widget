@@ -4,7 +4,7 @@
 ##### Installation
 
 `
-npm install github-widget
+npm install github-card
 `
 
 Then add this to your HTML, replacing data-username value with your own Github username
