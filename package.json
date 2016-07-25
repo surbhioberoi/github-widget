@@ -1,0 +1,29 @@
+{
+  "name": "github-widget",
+  "version": "1.0.0",
+  "description": "A widget showing your github details that you can easily embed in your portfolio website.",
+  "main": "widget.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/surbhioberoi/github-widget.git"
+  },
+  "keywords": [
+    "github",
+    "widget",
+    "github",
+    "widget",
+    "embed"
+  ],
+  "author": "Surbhi Oberoi <mail@surbhioberoi.com> (http://surbhioberoi.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/surbhioberoi/github-widget/issues"
+  },
+  "homepage": "https://github.com/surbhioberoi/github-widget#readme",
+  "dependencies": {
+    "jquery": "3.1.0"
+  }
+}
