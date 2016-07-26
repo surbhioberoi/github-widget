@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A widget showing your GitHub details that you can easily embed in your portfolio website." />
+
+    <title>Github Widget</title>
+
+    <style>
+        @font-face {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            src: url('fonts/roboto-slab.woff2') format('woff2'),
+                 url('fonts/roboto-slab.woff') format('woff');
+        }
+
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            color: #675741;
+            font: 14px/28px Roboto, serif;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        body {
+            top: 50%;
+            position: relative;
+
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        h1 {
+            margin: 16px 0 0;
+            font-size: 28px;
+            line-height: 48px;
+        }
+        p {
+            margin: 0 0 12px;
+        }
+        a,
+        span {
+            margin: 0 6px;
+        }
+        a {
+            color: #994F49;
+            text-decoration: none;
+        }
+        .github-widget {
+            margin: 0 auto;
+            max-width: auto;
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://npmcdn.com/github-card@1.0.0/dist/widget.js"></script>
+
+    <body>
+        <div class="github-widget" data-username="surbhioberoi"></div>
+
+        <h1>Github Widget</h1>
+
+        <p>
+            <span>A widget showing your GitHub details that you can easily embed in your portfolio website.</span>
+        </p>
+
+        <nav>
+            <a href="https://github.com/surbhioberoi/github-widget">Visit Project on GitHub</a>
+        </nav>
+    </body>
+</html>
