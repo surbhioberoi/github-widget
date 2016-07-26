@@ -33,6 +33,7 @@ Then add this to your HTML, replacing data-username value with your own Github u
 `
 bower install github-widget
 `
+
 Then add this to your HTML, replacing data-username value with your own Github username
 
 ```
