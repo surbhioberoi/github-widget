@@ -28,5 +28,17 @@ Then add this to your HTML, replacing data-username value with your own Github u
 <script src="../node_modules/github-card/dist/widget.js"></script>
 ```
 
+##### Via bower
+
+`
+bower install github-widget
+`
+Then add this to your HTML, replacing data-username value with your own Github username
+
+```
+<div class="github-widget" data-username="surbhioberoi"></div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/github-card/dist/widget.js"></script>
+```
 
 
