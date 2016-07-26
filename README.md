@@ -1,6 +1,6 @@
 ##Github Widget
 
-![Github Widget Image](http://i.imgur.com/TSzjeQN.png)
+![Github Widget Image](http://i.imgur.com/fYH21ju.jpg)
 
 #### How to use
 
