@@ -23,7 +23,7 @@ function fetchUserDetails(username) {
 }
 
 function updateLastPush(lastDay) {
-    $(".gh-widget-active-time").append('Last active: ' + lastDay ? lastDay + ' day(s) ago' : 'Today');
+    $(".gh-widget-active-time").append('Last active: ' + (lastDay ? lastDay + ' day(s) ago' : 'Today'));
 }
 
 function lastPushedDay(repos) {
