@@ -1,4 +1,3 @@
-
 function appendToWidget(parentSelector, tag, classes, html) {
     var parentNode = document.querySelector(parentSelector);
     var childNode = document.createElement(tag);
@@ -7,25 +6,26 @@ function appendToWidget(parentSelector, tag, classes, html) {
     parentNode.appendChild(childNode);
 }
 
+
 function getJSON(url, callback) {
     var request = new XMLHttpRequest();
     request.open('GET', url, true);
     request.onload = function() {
-      if (request.status === 200) {
-        var data = JSON.parse(request.responseText);
-        callback(data);
-      }
+        if (request.status === 200) {
+            var data = JSON.parse(request.responseText);
+            callback(data);
+        }
     };
     request.send();
 }
 
 
 function ready(fn) {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
+    if (document.readyState != 'loading') {
+        fn();
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
 }
 
 
@@ -38,6 +38,7 @@ function start() {
     fetchUserDetails(username);
 }
 
+
 ready(start);
 
 
@@ -49,6 +50,7 @@ function fetchRepos(username) {
     });
 }
 
+
 function fetchUserDetails(username) {
     var url = "https://api.github.com/users/" + username;
     getJSON(url, function(response) {
@@ -56,9 +58,11 @@ function fetchUserDetails(username) {
     });
 }
 
+
 function updateLastPush(lastDay) {
     appendToWidget(".gh-widget-active-time", "span", "", 'Last active: ' + (lastDay ? lastDay + ' day(s) ago' : 'Today'));
 }
+
 
 function lastPushedDay(repos) {
     var now = new Date();
@@ -73,6 +77,7 @@ function lastPushedDay(repos) {
     }
     return Math.floor((now - latestDate) / (1000 * 3600 * 24));
 }
+
 
 function updateUserDetails(user) {
 
@@ -101,6 +106,7 @@ function updateRepoDetails(repos) {
 }
 
 function topRepos(repos) {
+
     repos.sort(function(a, b) {
         if (a.stargazers_count === b.stargazers_count) {
             return 0;
@@ -110,6 +116,7 @@ function topRepos(repos) {
             return 1;
         }
     })
+
     repos = repos.slice(0, 3);
     var result = [];
     for (var i in repos) {
@@ -123,5 +130,4 @@ function topRepos(repos) {
         });
     }
     return result;
-
 }
