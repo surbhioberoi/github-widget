@@ -1,6 +1,6 @@
 ## Github Widget
 
-![Github Widget Image](http://i.imgur.com/cvk6G2x.png)
+![Github Widget Image](http://i.imgur.com/KfiQIXL.png)
 
 #### How to use
 
@@ -32,4 +32,12 @@ Then add this to your HTML, replacing data-username value with your own GitHub u
 ```html
 <div class="github-widget" data-username="surbhioberoi"></div>
 <script src="/bower_components/github-card/dist/widget.js"></script>
+```
+
+#### Using multiple widgets in same page
+
+```html
+<div class="github-widget" data-username="github"></div>
+<div class="github-widget" data-username="surbhioberoi"></div>
+<script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
 ```
