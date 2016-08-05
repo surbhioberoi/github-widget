@@ -60,11 +60,13 @@
     </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
-
+    
     <body>
-        <div class="github-widget" data-username="surbhioberoi"></div>
-
+        <input type="text" name="gh-username" onkeyup="genFn(this.value);">
+        <div id="opFrm">
+            <div class="github-widget" data-username="surbhioberoi"></div>
+            <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
+        </div>
         <h1>Github Widget</h1>
 
         <p>
@@ -74,5 +76,15 @@
         <nav>
             <a href="https://github.com/surbhioberoi/github-widget">Visit Project on GitHub</a>
         </nav>
+        
+        <script>
+            var genFn = function(uname){
+              document.getElementById('opFrm').innerHTML = `
+                <div class="github-widget" data-username="` + uname + `"></div>
+                <script src="https://npmcdn.com/github-card@1.2.1/dist/widget.js"></script>
+              `;  
+            };
+        </script>
+        
     </body>
 </html>
