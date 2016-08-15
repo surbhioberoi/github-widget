@@ -6,23 +6,15 @@
 
     <title>Github Widget</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
     <style>
-        @font-face {
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: 300;
-            src: url('fonts/roboto-slab.woff2') format('woff2'),
-                 url('fonts/roboto-slab.woff') format('woff');
-        }
-
         * {
+            font-family: 'Roboto Slab', serif;
             border: 0;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
             color: #675741;
-            font: 14px/28px Roboto, serif;
         }
         html {
             width: 100%;
@@ -57,34 +49,45 @@
             margin: 0 auto;
             max-width: auto;
         }
+        #create-card {
+            margin-top: 15px;
+        }
+        #create-card input {
+            
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #CCC;
+        }
+        #create-card button {
+            padding: 13px 10px 12px;
+            border-radius: 5px;
+            line-height: 1em;
+            cursor: pointer;
+            border: 1px solid #CCC;
+        }
     </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
+	<script src="https://npmcdn.com/github-card@1.2.1/dist/widget.js"></script>
+    <!--
+	<script>
+    function changeName(uname){
+        document.getElementById('github-widget').innerHTML = `<div class="github-widget" data-username="`+uname+`"></div>`;
+    }
+    </script>
+    -->
+	
     <body>
-        <input type="text" name="gh-username" onkeyup="genFn(this.value);">
-        <div id="opFrm">
-            <div class="github-widget" data-username="surbhioberoi"></div>
-            <script src="https://npmcdn.com/github-card@1.2.0/dist/widget.js"></script>
-        </div>
+        <div id="github-widget"><div class="github-widget" data-username="surbhioberoi"></div></div>
+        
+		<!--
+        <form id="create-card">
+            <input id="input" type="text" placeholder="Enter a GitHub Username">
+            <button type="button" value="Submit" onclick="changeName(document.getElementById('input').value)">Try it</button>
+        </form>
+		-->
+        
         <h1>Github Widget</h1>
-
-        <p>
-            <span>A widget showing your GitHub details that you can easily embed in your portfolio website.</span>
-        </p>
-
-        <nav>
-            <a href="https://github.com/surbhioberoi/github-widget">Visit Project on GitHub</a>
-        </nav>
-        
-        <script>
-            var genFn = function(uname){
-              document.getElementById('opFrm').innerHTML = `
-                <div class="github-widget" data-username="` + uname + `"></div>
-                <script src="https://npmcdn.com/github-card@1.2.1/dist/widget.js"></script>
-              `;  
-            };
-        </script>
-        
+        <p><span>A widget showing your GitHub details that you can easily embed in your portfolio website.</span></p>
+        <nav><a href="https://github.com/surbhioberoi/github-widget">Visit Project on GitHub</a></nav>        
     </body>
 </html>
