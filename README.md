@@ -9,7 +9,7 @@
 
 ```html
 <div class="github-widget" data-username="surbhioberoi"></div>
-<script src="https://npmcdn.com/github-card@1.2.1/dist/widget.js"></script>
+<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 ```
 
 ##### Via npm
@@ -39,5 +39,5 @@ Then add this to your HTML, replacing data-username value with your own GitHub u
 ```html
 <div class="github-widget" data-username="github"></div>
 <div class="github-widget" data-username="surbhioberoi"></div>
-<script src="https://npmcdn.com/github-card@1.2.1/dist/widget.js"></script>
+<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 ```
