@@ -50,7 +50,7 @@ ready(start);
 
 
 function fetchRepos(username, widgetId) {
-    var url = "https://api.github.com/users/" + username + "/repos";
+    var url = "https://api.github.com/users/" + username + "/repos?per_page=1000";
     getJSON(url, function(response) {
         updateRepoDetails(topRepos(response), widgetId);
         updateLastPush(lastPushedDay(response), widgetId);
