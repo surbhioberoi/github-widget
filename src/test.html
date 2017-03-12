@@ -1,22 +1,28 @@
-<body>
-<style>
-	.container {
-		display: flex;
-	}
-	.item {
-		flex: 1;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-	}
-	.github-widget {
-		min-height: 500px;
-	}
-</style>
-<div class="container">
-	<div class="item"><div class="github-widget" data-username="rhythm29"></div></div>
-	<div class="item"><div class="github-widget" data-username="surbhioberoi"></div></div>
-	<div class="item"><div class="github-widget" data-username="mukeshm"></div></div>
-</div>
-<script src="/dist/widget.js"></script>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test page</title>
+		<style>
+			.container {
+				display: flex;
+			}
+			.item {
+				flex: 1;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+			}
+			.github-widget {
+				min-height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item"><div class="github-widget" data-username="rhythm29"></div></div>
+			<div class="item"><div class="github-widget" data-username="surbhioberoi"></div></div>
+			<div class="item"><div class="github-widget" data-username="mukeshm"></div></div>
+		</div>
+		<script src="../dist/widget.js"></script>
+	</body>
+</html>

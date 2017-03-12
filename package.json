@@ -4,7 +4,8 @@
   "description": "A widget showing your github details that you can easily embed in your portfolio website.",
   "main": "widget.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "firefox src/test.html",
+    "build": "uglifyjs src/widget.js > dist/widget.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/surbhioberoi/github-widget/issues"
   },
-  "homepage": "https://surbhioberoi.github.io/github-widget"
+  "homepage": "https://surbhioberoi.github.io/github-widget",
+  "dependencies": {
+    "uglifyjs": "^2.4.10"
+  }
 }
