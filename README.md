@@ -23,15 +23,15 @@ Then add this to your HTML, replacing data-username value with your own GitHub u
 <script src="../node_modules/github-card/dist/widget.js"></script>
 ```
 
-##### Via bower
+##### Via browser
 
-`bower install github-widget`
+`browser install github-widget`
 
 Then add this to your HTML, replacing data-username value with your own GitHub username
 
 ```html
 <div class="github-widget" data-username="surbhioberoi"></div>
-<script src="/bower_components/github-card/dist/widget.js"></script>
+<script src="/browser_components/github-card/dist/widget.js"></script>
 ```
 
 #### Using multiple widgets in same page
